@@ -22,7 +22,7 @@ fn main() -> Result<()> {
     
     // Demonstrate backup management
     let mut bm = BackupManager::new(10);
-    let id = bm.create_snapshot(PathBuf::from("/backup"), SnapshotType::Manual)?;
+    let id = bm.create_snapshot(PathBuf::from("/backup"), SnapshotType::Manual).map_err(|e| anyhow::anyhow!("{}", e))?;
     println!("Snapshot created: {}", id);
     
     // Demonstrate system monitoring

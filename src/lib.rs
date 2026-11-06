@@ -3,8 +3,6 @@
 //! Collect system reports, diagnose common issues, and guide users through
 //! fixes. Inspired by mintreport.
 
-pub mod diagnostics;
-pub mod report;
 
 /// Initialise the troubleshooting subsystem.
 ///
@@ -12,3 +10,6 @@ pub mod report;
 pub fn init() {
     // TODO: register built-in diagnostic checks and report collectors
 }
+
+pub mod backup;
+pub mod system;
