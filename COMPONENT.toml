@@ -1,6 +1,6 @@
 [component]
 name = "SigmaOS-troubleshooting-tool"
-description = "SigmaOS subsystem component for troubleshooting-tool"
+description = "System report & troubleshooting generator"
 version = "0.1.0"
 tier = 5
 
